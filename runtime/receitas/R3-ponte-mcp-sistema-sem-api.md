@@ -1,6 +1,6 @@
 # R3 · Ponte MCP para um sistema sem API
 
-**Para quê:** o ERP, a agenda ou a planilha não têm API, mas exportam arquivo. A ponte lê esse arquivo e entrega ao agente como **ferramenta** com nome e regras.
+**Para quê:** o ERP, a agenda ou a planilha nêo têm API, mas exportam arquivo. A ponte lê esse arquivo e entrega ao agente como **ferramenta** com nome e regras.
 **Via:** ponte local (nível 6) exposta por MCP (nível 2) · **Política:** só leitura (N4).
 **Pré:** Node 18+ · **Dificuldade:** média · **Tempo:** 20 min
 
@@ -9,7 +9,7 @@ O modelo está em `runtime/pontes/mcp-modelo/server.mjs`: um servidor MCP sem de
 | Ferramenta | Lê | Caso |
 |---|---|---|
 | `listar_horarios_livres` | `runtime/exemplos/agenda.csv` | clínica com agenda em planilha |
-| `resumo_vendas` | `runtime/exemplos/erp-vendas.csv` | contador(a) com exportação do ERP |
+| `resumo_vendas` | `runtime/exemplos/erp-vendas.csv` | contador(a) com exportaçêo do ERP |
 
 ## 1. Teste a ponte sozinha
 
@@ -39,7 +39,7 @@ codex mcp add ponte-modelo -- node "$PWD/runtime/pontes/mcp-modelo/server.mjs"
 claude -p "Use a tool listar_horarios_livres da ponte-modelo e diga os horários livres de 2026-10-07."
 ```
 
-**Prova:** responde 08:00 (Dra. Ana) e 16:00 (Dr. Bruno), que são exatamente as linhas `livre` do CSV.
+**Prova:** responde 08:00 (Dra. Ana) e 16:00 (Dr. Bruno), que sêo exatamente as linhas `livre` do CSV.
 
 ## 4. Troque pelo seu sistema
 

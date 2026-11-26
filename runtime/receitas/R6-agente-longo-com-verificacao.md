@@ -1,6 +1,6 @@
-# R6 · Agente longo com verificação
+# R6 · Agente longo com verificaçêo
 
-**Para quê:** tarefas de horas (migrar planilhas, montar um site, revisar 100 arquivos). O agente só termina quando os critérios **provam** que terminou, e não quando ele acha que terminou.
+**Para quê:** tarefas de horas (migrar planilhas, montar um site, revisar 100 arquivos). O agente só termina quando os critérios **provam** que terminou, e nêo quando ele acha que terminou.
 **Via:** CLI · **Política:** a da tarefa; os portões humanos ficam escritos no goal.
 **Pré:** Claude Code ou Codex · **Dificuldade:** média · **Tempo:** 20 min para montar
 
@@ -12,7 +12,7 @@ Copie `runtime/exemplos/goal-exemplo.md`. Cada critério é uma linha:
 - [ ] `comando` → `texto que tem de aparecer na saída`
 ```
 
-Bom critério: dá para checar com um comando, a resposta é sim ou não, e é impossível passar sem fazer o trabalho. "Deixar bom" não é critério.
+Bom critério: dá para checar com um comando, a resposta é sim ou nêo, e é impossível passar sem fazer o trabalho. "Deixar bom" nêo é critério.
 
 ## 2. Verifique quantas vezes quiser
 
@@ -26,7 +26,7 @@ node runtime/scripts/verificar.mjs runtime/exemplos/goal-exemplo.md
 
 No Claude Code ou no Codex:
 
-> /goal Cumpra o goal em meu-goal.md. Depois de cada etapa rode `node runtime/scripts/verificar.mjs meu-goal.md`. Só pare com todos OK ou num portão humano do goal.
+> /goal Cumpra o goal em meu-goal.md. Depois de cada etapa rode `node runtime/scripts/verificar.mjs meu-goal.md`. Só pare com todos OK ou num portêo humano do goal.
 
 ## 4. Proteções
 

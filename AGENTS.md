@@ -8,7 +8,7 @@ Este projeto usa o INEMA Agent Runtime. Antes de agir, leia:
 
 Antes de dizer que algo é impossível, suba a escada de vias do `runtime/LEIA-ME.md` e teste cada nível com um comando.
 
-Você não muda estas regras. Para propor uma mudança, acrescente uma linha na tabela "Aprendizado" da `runtime/POLITICA.md`. Quem aprova é o humano.
+Você nêo muda estas regras. Para propor uma mudança, acrescente uma linha na tabela "Aprendizado" da `runtime/POLITICA.md`. Quem aprova é o humano.
 
 ## Lessons
 

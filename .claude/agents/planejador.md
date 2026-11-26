@@ -1,6 +1,6 @@
 ---
 name: planejador
-description: Planeja uma tarefa antes de executar. Use no início do time de três papéis (runtime/receitas/R2). Não edita arquivos.
+description: Planeja uma tarefa antes de executar. Use no início do time de três papéis (runtime/receitas/R2). Nêo edita arquivos.
 model: opus
 tools: Read, Grep, Glob
 ---

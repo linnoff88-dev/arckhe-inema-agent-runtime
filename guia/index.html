@@ -149,20 +149,20 @@
 
 <section id="oque"><div class="wrap">
   <span class="chip">O que é</span>
-  <h2>Um kit, não uma plataforma</h2>
-  <p class="sub">Quatro arquivos de regras, scripts de diagnóstico e verificação, pontes, uma guarda e 7 receitas testadas. Você copia para o seu projeto e os agentes passam a seguir as mesmas regras.</p>
+  <h2>Um kit, nêo uma plataforma</h2>
+  <p class="sub">Quatro arquivos de regras, scripts de diagnóstico e verificaçêo, pontes, uma guarda e 7 receitas testadas. Você copia para o seu projeto e os agentes passam a seguir as mesmas regras.</p>
   <figure style="margin:0 0 26px;border-radius:16px;overflow:hidden;border:1px solid var(--line);box-shadow:0 30px 80px -30px #000"><img src="assets/banner-grade.jpg" alt="Os blocos do kit: escada de vias, capacidades, política, roteamento, ponte MCP e receitas" loading="lazy" style="width:100%;display:block"></figure>
   <div class="grid g3">
     <div class="card"><h3>🪜 Escada de vias</h3><p>Antes de dizer "impossível", o agente sobe a escada API → MCP → CLI → SDK → uso do computador → ponte local e usa a via mais estável que existir.</p></div>
     <div class="card"><h3>🛡️ Política de permissões</h3><p>Ler é livre; alterar arquivo, ele faz e avisa; enviar pede antes; gastar dinheiro ou apagar dados, ele só prepara. O <code>.claude/settings.json</code> já bloqueia <code>rm -rf</code>.</p></div>
-    <div class="card"><h3>💳 Pela assinatura</h3><p>Usa o Claude Code e o Codex CLI que você já tem logados. Nenhuma API paga é pré-requisito. Modelos locais do Ollama são opcionais.</p></div>
+    <div class="card"><h3>💳 Pela assinatura</h3><p>Usa o Claude Code e o Codex CLI que você já tem logados. Nenhuma API paga é pré-requisito. Modelos locais do Ollama sêo opcionais.</p></div>
   </div>
 </div></section>
 
 <section id="fluxo"><div class="wrap">
   <span class="chip">Como funciona</span>
   <h2>O ciclo do runtime</h2>
-  <p class="sub">Cada etapa tem um arquivo. Toda ação passa pela <code>POLITICA.md</code>.</p>
+  <p class="sub">Cada etapa tem um arquivo. Toda açêo passa pela <code>POLITICA.md</code>.</p>
   <div class="flow">
     <span>Descobrir</span><span class="arr">→</span>
     <span>Conectar</span><span class="arr">→</span>
@@ -173,8 +173,8 @@
     <span>Aprender</span>
   </div>
   <div class="grid g4" style="margin-top:28px">
-    <div class="card"><div class="num">1</div><h3>CAPACIDADES.md</h3><p>Mapa das ferramentas: uma linha por sistema, com a via, o nível e a data do teste. Sistema sem linha não é usado.</p></div>
-    <div class="card"><div class="num">2</div><h3>POLITICA.md</h3><p>Níveis de autonomia N0 a N4 e o teto de cada tipo de ação. "Sempre permitir" nunca passa do teto.</p></div>
+    <div class="card"><div class="num">1</div><h3>CAPACIDADES.md</h3><p>Mapa das ferramentas: uma linha por sistema, com a via, o nível e a data do teste. Sistema sem linha nêo é usado.</p></div>
+    <div class="card"><div class="num">2</div><h3>POLITICA.md</h3><p>Níveis de autonomia N0 a N4 e o teto de cada tipo de açêo. "Sempre permitir" nunca passa do teto.</p></div>
     <div class="card"><div class="num">3</div><h3>ROTEAMENTO.md</h3><p>Qual modelo para qual tarefa (super, topo, executor, menor). Comece no menor que resolve.</p></div>
     <div class="card"><div class="num">4</div><h3>LEIA-ME.md</h3><p>O ciclo, a ordem para começar e a escada das vias com exemplos.</p></div>
   </div>
@@ -187,27 +187,27 @@
     <tr><td>3</td><td>CLI</td><td><code>codex exec</code>, <code>gh</code>, <code>git</code></td><td>alta</td></tr>
     <tr><td>4</td><td>SDK / biblioteca</td><td>pacote npm/pip</td><td>média</td></tr>
     <tr><td>5</td><td>Uso do computador</td><td>navegador automatizado, cliques na tela</td><td>baixa</td></tr>
-    <tr><td>6</td><td>Ponte local</td><td>exportação CSV, pasta, banco SQLite, porta local</td><td>média</td></tr>
-    <tr><td>7</td><td>Engenharia reversa</td><td>observar o app rodando para achar a via</td><td><strong>só laboratório</strong>: quebra na próxima atualização</td></tr>
+    <tr><td>6</td><td>Ponte local</td><td>exportaçêo CSV, pasta, banco SQLite, porta local</td><td>média</td></tr>
+    <tr><td>7</td><td>Engenharia reversa</td><td>observar o app rodando para achar a via</td><td><strong>só laboratório</strong>: quebra na próxima atualizaçêo</td></tr>
   </table></div>
 
-  <h3 style="margin:42px 0 14px;font-size:1.2rem">Teto por tipo de ação</h3>
+  <h3 style="margin:42px 0 14px;font-size:1.2rem">Teto por tipo de açêo</h3>
   <div class="tblwrap"><table class="tbl">
-    <tr><th>Ação</th><th>Teto</th><th>No Claude Code</th><th>No Codex</th></tr>
+    <tr><th>Açêo</th><th>Teto</th><th>No Claude Code</th><th>No Codex</th></tr>
     <tr><td>Ler arquivo, página, planilha</td><td>N4</td><td>permitido</td><td><code>-s read-only</code></td></tr>
     <tr><td>Criar/alterar arquivo do projeto</td><td>N3</td><td><code>acceptEdits</code></td><td><code>-s workspace-write</code></td></tr>
-    <tr><td>Comando que altera o sistema</td><td>N2</td><td>pede confirmação</td><td>sem auto-aprovação</td></tr>
-    <tr><td>Enviar (e-mail, mensagem, post, push)</td><td>N2</td><td>pede confirmação</td><td>sem auto-aprovação</td></tr>
-    <tr><td>Gastar dinheiro ou crédito</td><td>N1</td><td>bloqueado</td><td>não executar</td></tr>
-    <tr><td>Apagar dados / produção</td><td>N1 + backup</td><td>bloqueado (<code>rm -rf</code>)</td><td>não executar</td></tr>
+    <tr><td>Comando que altera o sistema</td><td>N2</td><td>pede confirmaçêo</td><td>sem auto-aprovaçêo</td></tr>
+    <tr><td>Enviar (e-mail, mensagem, post, push)</td><td>N2</td><td>pede confirmaçêo</td><td>sem auto-aprovaçêo</td></tr>
+    <tr><td>Gastar dinheiro ou crédito</td><td>N1</td><td>bloqueado</td><td>nêo executar</td></tr>
+    <tr><td>Apagar dados / produçêo</td><td>N1 + backup</td><td>bloqueado (<code>rm -rf</code>)</td><td>nêo executar</td></tr>
   </table></div>
-  <p class="note">N0 só conversa · N1 prepara e o humano executa · N2 executa depois de pedir · N3 executa e avisa · N4 executa sem aviso. O agente não muda as próprias regras: ele propõe uma linha na tabela "Aprendizado" da <code>POLITICA.md</code> e você aprova.</p>
+  <p class="note">N0 só conversa · N1 prepara e o humano executa · N2 executa depois de pedir · N3 executa e avisa · N4 executa sem aviso. O agente nêo muda as próprias regras: ele propõe uma linha na tabela "Aprendizado" da <code>POLITICA.md</code> e você aprova.</p>
 </div></section>
 
 <section id="pre"><div class="wrap">
   <span class="chip">Pré-requisitos</span>
   <h2>O que precisa estar instalado</h2>
-  <p class="sub">Linux ou Mac. No Windows, use WSL. O diagnóstico só lê versões e status locais: não chama modelo nem API.</p>
+  <p class="sub">Linux ou Mac. No Windows, use WSL. O diagnóstico só lê versões e status locais: nêo chama modelo nem API.</p>
   <div class="grid g3">
     <div class="card"><h3>Node 18+</h3><p>Roda o diagnóstico, a ponte MCP e os scripts de observar e verificar.</p><pre><span class="k">node</span> --version</pre></div>
     <div class="card"><h3>Claude Code e/ou Codex</h3><p>Pelo menos um dos dois, logado pela assinatura.</p><pre><span class="k">npm</span> i -g @anthropic-ai/claude-code
@@ -220,7 +220,7 @@
 <section id="guia"><div class="wrap">
   <span class="chip">Guia de uso · passo a passo</span>
   <h2>Do clone ao primeiro time de agentes</h2>
-  <p class="sub">Cada receita termina com uma <strong>prova</strong>: um comando e a saída que tem de aparecer. Se a prova não bate, o passo não está pronto.</p>
+  <p class="sub">Cada receita termina com uma <strong>prova</strong>: um comando e a saída que tem de aparecer. Se a prova nêo bate, o passo nêo está pronto.</p>
 
   <div class="step"><div class="b">1</div><div>
     <h3>Copie o kit e rode o diagnóstico</h3>
@@ -239,7 +239,7 @@
 
   <div class="step"><div class="b">3</div><div>
     <h3>R1 · Claude usa o Codex</h3>
-    <p>Ponte por CLI (nível 3). Por padrão o Codex só lê; alterar arquivos (N3) só se você passar <code>workspace-write</code>.</p>
+    <p>Ponte por CLI (nível 3). Por padrêo o Codex só lê; alterar arquivos (N3) só se você passar <code>workspace-write</code>.</p>
 <pre><span class="k">chmod</span> +x runtime/pontes/codex-exec.sh
 runtime/pontes/codex-exec.sh <span class="s">"Responda apenas PONG"</span>   <span class="c"># prova: PONG</span>
 runtime/pontes/codex-exec.sh <span class="s">"Crie notas.txt com a palavra OK"</span> <span class="s">"$PWD"</span> workspace-write</pre>
@@ -262,7 +262,7 @@ runtime/pontes/codex-exec.sh <span class="s">"Crie notas.txt com a palavra OK"</
 
   <div class="step"><div class="b">6</div><div>
     <h3>R4 · Time em segundo plano</h3>
-    <p>Várias sessões do Claude ao mesmo tempo, cada uma com nome, papel e modelo. Marque a pasta como confiável uma vez. Cada sessão consome a cota.</p>
+    <p>Várias sessões do Claude ao mesmo tempo, cada uma com nome, papel e modelo. Marque a pasta como confiável uma vez. Cada sessêo consome a cota.</p>
 <pre><span class="k">claude</span> --bg --permission-mode plan --name revisor <span class="s">"Leia runtime/POLITICA.md e responda em uma linha qual é o teto de 'Enviar'."</span>
 <span class="k">claude</span> --bg --model sonnet --name executor <span class="s">"Crie resumo.md com 3 linhas sobre o que é este kit."</span>
 <span class="k">node</span> runtime/scripts/observar.mjs   <span class="c"># tabela com id, tipo, nome e estado</span></pre>
@@ -279,21 +279,21 @@ runtime/pontes/codex-exec.sh <span class="s">"Crie notas.txt com a palavra OK"</
   </div></div>
 
   <div class="step"><div class="b">8</div><div>
-    <h3>R6 · Agente longo com verificação</h3>
-    <p>O agente só termina quando os critérios <code>comando → saída esperada</code> do goal passam, e não quando ele acha que terminou.</p>
+    <h3>R6 · Agente longo com verificaçêo</h3>
+    <p>O agente só termina quando os critérios <code>comando → saída esperada</code> do goal passam, e nêo quando ele acha que terminou.</p>
 <pre><span class="k">node</span> runtime/scripts/verificar.mjs runtime/exemplos/goal-exemplo.md
 <span class="c"># prova: 4/4 critérios OK e saída 0; quebre um critério e a linha vira FALHA</span></pre>
   </div></div>
 
   <div class="step"><div class="b">9</div><div>
     <h3>R7 · Guarda e painel</h3>
-    <p>Com vários agentes ao mesmo tempo, a <strong>guarda</strong> pega dois riscos antes de acontecer, e nunca decide sozinha: ela pergunta (N2). <strong>Colisão</strong>: antes de editar um arquivo que outra sessão editou, ou que mudou por fora (Codex, editor, outra pessoa) nos últimos 30 min. <strong>Raio</strong>: antes de <code>rm</code> ou <code>git clean</code>, mostra quantos arquivos seriam apagados, o tamanho e os primeiros caminhos. Neste kit ela já vem ligada pelo <code>.claude/settings.json</code>; para levar a outro projeto, use <strong>um</strong> dos jeitos: o comando abaixo ou copiar o bloco <code>hooks</code> do <code>.claude/settings.json</code> trocando o caminho.</p>
-<pre><span class="c"># guarda em outro projeto (só nesta sessão)</span>
+    <p>Com vários agentes ao mesmo tempo, a <strong>guarda</strong> pega dois riscos antes de acontecer, e nunca decide sozinha: ela pergunta (N2). <strong>Colisêo</strong>: antes de editar um arquivo que outra sessêo editou, ou que mudou por fora (Codex, editor, outra pessoa) nos últimos 30 min. <strong>Raio</strong>: antes de <code>rm</code> ou <code>git clean</code>, mostra quantos arquivos seriam apagados, o tamanho e os primeiros caminhos. Neste kit ela já vem ligada pelo <code>.claude/settings.json</code>; para levar a outro projeto, use <strong>um</strong> dos jeitos: o comando abaixo ou copiar o bloco <code>hooks</code> do <code>.claude/settings.json</code> trocando o caminho.</p>
+<pre><span class="c"># guarda em outro projeto (só nesta sessêo)</span>
 <span class="k">claude</span> --plugin-dir /caminho/do/kit/runtime/mods/runtime-guarda
-<span class="c"># painel opcional: na sessão, digite /painel</span>
+<span class="c"># painel opcional: na sessêo, digite /painel</span>
 <span class="k">claude</span> --plugin-dir runtime/mods/runtime-painel
 <span class="k">claude</span> plugin test runtime/mods/runtime-painel   <span class="c"># prova: 1 pass</span></pre>
-    <p>O painel lista as sessões do <code>claude --bg</code> (nome, estado, minutos), com <strong>Atualizar</strong> e <strong>Parar</strong>: só o seu clique para uma sessão. <code>INEMA_COLISAO_MIN=60</code> muda a janela da colisão. O Codex ainda não tem um gancho "antes de editar" equivalente: a colisão protege as sessões do Claude e detecta edições feitas pelo Codex pela data do arquivo.</p>
+    <p>O painel lista as sessões do <code>claude --bg</code> (nome, estado, minutos), com <strong>Atualizar</strong> e <strong>Parar</strong>: só o seu clique para uma sessêo. <code>INEMA_COLISAO_MIN=60</code> muda a janela da colisêo. O Codex ainda nêo tem um gancho "antes de editar" equivalente: a colisêo protege as sessões do Claude e detecta edições feitas pelo Codex pela data do arquivo.</p>
   </div></div>
 </div></section>
 
@@ -323,10 +323,10 @@ data,cliente,produto,quantidade,valor_unitario
 <section id="roadmap"><div class="wrap">
   <span class="chip">Roadmap</span>
   <h2>Em fases, cada uma provada</h2>
-  <p class="sub">Cada fase só fecha quando as provas rodam. As provas rodadas de cada versão estão no <code>CHANGELOG.md</code>.</p>
-  <div class="phase"><div class="tag">Fase 1</div><div class="d"><strong>Kit mínimo · 0.1.0 · pronta</strong><span>Quatro arquivos de convenção, diagnóstico, ponte <code>codex-exec.sh</code>, receitas R1 e R2 e bloqueios no <code>.claude/settings.json</code>. Provas rodadas em Linux pela assinatura.</span></div></div>
+  <p class="sub">Cada fase só fecha quando as provas rodam. As provas rodadas de cada versêo estêo no <code>CHANGELOG.md</code>.</p>
+  <div class="phase"><div class="tag">Fase 1</div><div class="d"><strong>Kit mínimo · 0.1.0 · pronta</strong><span>Quatro arquivos de convençêo, diagnóstico, ponte <code>codex-exec.sh</code>, receitas R1 e R2 e bloqueios no <code>.claude/settings.json</code>. Provas rodadas em Linux pela assinatura.</span></div></div>
   <div class="phase"><div class="tag">Fase 2</div><div class="d"><strong>Pontes, observar e verificar · 0.2.0 · pronta</strong><span>Ponte MCP sem dependências, <code>observar.mjs</code>, <code>verificar.mjs</code> e receitas R3 a R6.</span></div></div>
-  <div class="phase"><div class="tag">Fase 3</div><div class="d"><strong>Guarda e painel · 0.3.0 · pronta</strong><span>Mod <code>runtime-guarda</code> (colisão e raio, já ligado no kit), mod opcional <code>runtime-painel</code> com <code>/painel</code> e receita R7.</span></div></div>
+  <div class="phase"><div class="tag">Fase 3</div><div class="d"><strong>Guarda e painel · 0.3.0 · pronta</strong><span>Mod <code>runtime-guarda</code> (colisêo e raio, já ligado no kit), mod opcional <code>runtime-painel</code> com <code>/painel</code> e receita R7.</span></div></div>
 </div></section>
 
 <footer>

@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 # Ponte nível 3 (CLI): manda um pedido ao Codex pela assinatura e imprime a resposta final.
 # Uso: runtime/pontes/codex-exec.sh "pedido" [pasta] [sandbox]
-#   sandbox: read-only (padrão, POLITICA: ler) | workspace-write (POLITICA: alterar, N3)
-# Modelo: CODEX_MODELO (padrão gpt-6-luna = nível "menor" do ROTEAMENTO.md)
+#   sandbox: read-only (padrêo, POLITICA: ler) | workspace-write (POLITICA: alterar, N3)
+# Modelo: CODEX_MODELO (padrêo gpt-6-luna = nível "menor" do ROTEAMENTO.md)
 set -euo pipefail
 
 pedido="${1:?uso: codex-exec.sh \"pedido\" [pasta] [sandbox]}"

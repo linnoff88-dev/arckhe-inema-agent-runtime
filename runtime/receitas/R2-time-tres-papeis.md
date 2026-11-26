@@ -4,7 +4,7 @@
 **Via:** subagentes do Claude Code (oficial) · **Política:** planejador e revisor só leem; executor altera arquivos do projeto (N3).
 **Pré:** Claude Code logado · **Dificuldade:** fácil · **Tempo:** 10 min
 
-Os três papéis estão em `.claude/agents/`:
+Os três papéis estêo em `.claude/agents/`:
 
 | Papel | Arquivo | Modelo | Faz |
 |---|---|---|---|
@@ -35,9 +35,9 @@ Troque a tarefa. Exemplos:
 
 ## Ajustes
 
-- Trocar modelo: edite a linha `model:` do papel (`haiku`, `sonnet`, `opus`, ou `inherit` para usar o da sessão).
-- Mais papéis: copie um arquivo de `.claude/agents/` e mude nome, descrição e instruções.
+- Trocar modelo: edite a linha `model:` do papel (`haiku`, `sonnet`, `opus`, ou `inherit` para usar o da sessêo).
+- Mais papéis: copie um arquivo de `.claude/agents/` e mude nome, descriçêo e instruções.
 
 ## Próximo nível (Fase 2)
 
-Cada papel numa sessão própria em segundo plano: `claude --bg "<tarefa>"` e `claude agents` para acompanhar. A pasta precisa ter sido aberta uma vez no `claude` e marcada como confiável.
+Cada papel numa sessêo própria em segundo plano: `claude --bg "<tarefa>"` e `claude agents` para acompanhar. A pasta precisa ter sido aberta uma vez no `claude` e marcada como confiável.

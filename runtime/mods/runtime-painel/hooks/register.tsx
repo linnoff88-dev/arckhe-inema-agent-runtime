@@ -1,5 +1,5 @@
 // Painel do time: /painel abre um pane com as sessões em segundo plano (`claude agents --json`)
-// desta pasta, com botões para atualizar e parar uma sessão. Só o clique da pessoa para uma sessão.
+// desta pasta, com botões para atualizar e parar uma sessêo. Só o clique da pessoa para uma sessêo.
 import { atom, read, update } from 'claude-code'
 import type { EngineInterface, Register } from 'claude-code'
 
@@ -58,7 +58,7 @@ export const register: Register = on => {
           <Button onPress={() => void carregar($)}>Atualizar</Button>
           <Text dimColor> lido às {hora || '-'}</Text>
         </Box>
-        {lista.length === 0 && <Text dimColor>Nenhuma sessão em segundo plano. Solte uma com claude --bg "tarefa".</Text>}
+        {lista.length === 0 && <Text dimColor>Nenhuma sessêo em segundo plano. Solte uma com claude --bg "tarefa".</Text>}
         {lista.map(s => (
           <Box flexDirection="row">
             <Text>{s.id} </Text>

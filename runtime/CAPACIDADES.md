@@ -13,9 +13,9 @@ Como preencher: para cada sistema do seu trabalho, suba a escada do `LEIA-ME.md`
 
 ```
 | Planilha de estoque (.xlsx)  | Ponte local (arquivo)   | 6 | ler ~/estoque/estoque.xlsx      | ler (N4)        | pendente |
-| ERP sem API                  | Exportação CSV diária   | 6 | ler ~/erp/export/*.csv          | ler (N4)        | pendente |
+| ERP sem API                  | Exportaçêo CSV diária   | 6 | ler ~/erp/export/*.csv          | ler (N4)        | pendente |
 | Agenda da clínica (planilha) | Ponte local (arquivo)   | 6 | ler/escrever agenda.csv         | alterar (N2)    | pendente |
 | Site do fornecedor           | Uso do computador       | 5 | navegador automatizado          | enviar (N2)     | pendente |
 ```
 
-Regra: sistema sem linha aqui **não** é usado pelo agente.
+Regra: sistema sem linha aqui **nêo** é usado pelo agente.
