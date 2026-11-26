@@ -32,4 +32,4 @@ No Claude Code ou no Codex:
 
 - Portões humanos no goal: gasto, envio, apagar, publicar.
 - Anote no `FALHAS.md` o que quebrou e no `LIMITES.md` o que o ambiente barrou, uma linha cada.
-- Em Linux, para rodar sem tela, o método completo (laço com tempo e memória limitados) está em [inematds/execucao-longa](https://github.com/inematds/execucao-longa).
+- Em Linux, para rodar sem tela, o método completo (laço com tempo e memória limitados) está em [linnoff88-dev/execucao-longa](https://github.com/linnoff88-dev/execucao-longa).

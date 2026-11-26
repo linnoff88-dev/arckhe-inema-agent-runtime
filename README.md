@@ -1,4 +1,4 @@
-ï»¿# INEMA Agent Runtime
+ï»¿# ARCKHÉ Agent Runtime
 
 <div align="center">
   <img src="capa/logo.svg" alt="Arckhé AI" height="48" />
@@ -8,18 +8,18 @@
 
 **ê°Å¸â¡Â§ê°Å¸â¡Â· [PortuguêÂªs](README.md) êÂ· ê°Å¸â¡Âºê°Å¸â¡Â¸ [English](README.en.md) êÂ· ê°Å¸â¡Âªê°Å¸â¡Â¸ [EspaêÂ±ol](README.es.md)**
 
-[![INEMA Agent Runtime](guia/assets/banner.jpg)](https://inematds.github.io/inema-agent-runtime/guia/)
+[![ARCKHÉ Agent Runtime](guia/assets/banner.jpg)](https://linnoff88-dev.github.io/arckhe-/guia/)
 
 Kit copiêÂ¡vel para fazer seus agentes de IA (Claude Code e Codex) **descobrirem, conectarem e usarem** as ferramentas que vocêÂª jêÂ¡ tem, com regras claras do que podem fazer sozinhos.
 
 NêÂ£o êÂ© plataforma nem servidor. êâ° uma pasta `runtime/` com 4 arquivos de regras, scripts de diagnêÂ³stico e verificaêÂ§êÂ£o, pontes, uma guarda e 7 receitas testadas. Funciona pela **assinatura** do Claude Code e/ou do Codex: nenhuma API paga êÂ© prêÂ©-requisito.
 
-**Guia:** https://inematds.github.io/inema-agent-runtime/guia/
+**Guia:** https://linnoff88-dev.github.io/arckhe-/guia/
 
 ## Em 10 minutos
 
 ```bash
-git clone https://github.com/inematds/inema-agent-runtime meu-projeto
+git clone https://github.com/linnoff88-dev/ARCKHÉ-agent-runtime meu-projeto
 cd meu-projeto
 node runtime/scripts/doctor.mjs        # o que estêÂ¡ instalado e logado
 ```
@@ -65,7 +65,7 @@ Antes de dizer "impossêÂ­vel", o agente sobe a escada das vias de integraê
 - Node 18+ êÂ· Claude Code e/ou Codex CLI logados pela assinatura
 - Linux ou Mac. Windows: use WSL.
 
-LicenêÂ§a MIT êÂ· Parte do ecossistema [INEMA.CLUB](https://inema.club)
+LicenêÂ§a MIT êÂ· Parte do ecossistema [ARCKHÉ AI](https://ARCKHÉ AI)
 
 ---
 

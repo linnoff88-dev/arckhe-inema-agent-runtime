@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-// Diagnóstico do INEMA Agent Runtime: o que está instalado e pronto para os agentes.
+// Diagnóstico do ARCKHÉ Agent Runtime: o que está instalado e pronto para os agentes.
 // Só lê versões e status locais. Não chama modelo nem API.
 import { spawnSync } from 'node:child_process';
 

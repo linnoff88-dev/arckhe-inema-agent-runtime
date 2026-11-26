@@ -1,6 +1,6 @@
 # Regras dos agentes neste projeto
 
-Este projeto usa o INEMA Agent Runtime. Antes de agir, leia:
+Este projeto usa o ARCKHÉ Agent Runtime. Antes de agir, leia:
 
 1. `runtime/POLITICA.md`: o que você faz sozinho, o que pede antes e o que nunca faz.
 2. `runtime/CAPACIDADES.md`: só use sistemas listados ali, pela via indicada.

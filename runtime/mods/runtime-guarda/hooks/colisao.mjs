@@ -1,17 +1,17 @@
 #!/usr/bin/env node
 // Guarda de colisão: antes de editar, avisa se o arquivo foi mexido por OUTRA sessão
-// (ou por fora: Codex, editor, outra pessoa) nos últimos INEMA_COLISAO_MIN minutos (padrão 30).
+// (ou por fora: Codex, editor, outra pessoa) nos últimos ARCKHÉ_COLISAO_MIN minutos (padrão 30).
 //   colisao.mjs pre  → hook PreToolUse (Edit|Write|MultiEdit|NotebookEdit): responde "ask" com o motivo
 //   colisao.mjs pos  → hook PostToolUse: anota "esta sessão editou este arquivo agora"
-// Registro compartilhado entre sessões: ${XDG_STATE_HOME:-~/.local/state}/inema-runtime/toques.json
+// Registro compartilhado entre sessões: ${XDG_STATE_HOME:-~/.local/state}/ARCKHÉ-runtime/toques.json
 import { readFileSync, writeFileSync, mkdirSync, statSync, renameSync } from 'node:fs';
 import { join, resolve } from 'node:path';
 import { homedir } from 'node:os';
 
 const modo = process.argv[2];
-const janelaMs = Number(process.env.INEMA_COLISAO_MIN || 30) * 60000;
-const pastaEstado = process.env.INEMA_RUNTIME_ESTADO
-  || join(process.env.XDG_STATE_HOME || join(homedir(), '.local', 'state'), 'inema-runtime');
+const janelaMs = Number(process.env.ARCKHÉ_COLISAO_MIN || 30) * 60000;
+const pastaEstado = process.env.ARCKHÉ_RUNTIME_ESTADO
+  || join(process.env.XDG_STATE_HOME || join(homedir(), '.local', 'state'), 'ARCKHÉ-runtime');
 const registro = join(pastaEstado, 'toques.json');
 
 function lerRegistro() {

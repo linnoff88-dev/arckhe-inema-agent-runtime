@@ -16,12 +16,12 @@ Os três papéis estêo em `.claude/agents/`:
 
 Abra `claude` na pasta e peça:
 
-> Use o time: o planejador planeja, o executor faz e o revisor confere. Tarefa: crie `saudacao.txt` com a frase "Olá, comunidade INEMA".
+> Use o time: o planejador planeja, o executor faz e o revisor confere. Tarefa: crie `saudacao.txt` com a frase "Olá, comunidade ARCKHÉ".
 
 Ou sem abrir a tela:
 
 ```bash
-claude -p "Use o time (planejador, executor, revisor). Tarefa: crie saudacao.txt com a frase 'Olá, comunidade INEMA'. Termine com a resposta do revisor."
+claude -p "Use o time (planejador, executor, revisor). Tarefa: crie saudacao.txt com a frase 'Olá, comunidade ARCKHÉ'. Termine com a resposta do revisor."
 ```
 
 **Prova:** `cat saudacao.txt` mostra a frase e a resposta termina com `APROVADO`.

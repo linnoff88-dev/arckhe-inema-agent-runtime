@@ -19,7 +19,7 @@ claude --plugin-dir /caminho/do/kit/runtime/mods/runtime-guarda      # só nesta
 
 ou copie o bloco `hooks` do `.claude/settings.json` deste kit para o do outro projeto, trocando o caminho.
 
-Ajustes: `INEMA_COLISAO_MIN=60` muda a janela. O registro de quem editou o quê fica em `~/.local/state/inema-runtime/toques.json` e se limpa sozinho depois de 24 h.
+Ajustes: `ARCKHÉ_COLISAO_MIN=60` muda a janela. O registro de quem editou o quê fica em `~/.local/state/ARCKHÉ-runtime/toques.json` e se limpa sozinho depois de 24 h.
 
 ### Prova
 

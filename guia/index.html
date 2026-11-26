@@ -3,11 +3,11 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>INEMA Agent Runtime — seus agentes usando as ferramentas que você já tem</title>
+<title>ARCKHÉ Agent Runtime — seus agentes usando as ferramentas que você já tem</title>
 <meta name="description" content="Kit copiável para o Claude Code e o Codex descobrirem, conectarem e usarem suas ferramentas com política de permissões. Funciona pela assinatura, sem API paga.">
-<link rel="alternate" hreflang="pt-BR" href="https://inematds.github.io/inema-agent-runtime/guia/">
-<link rel="alternate" hreflang="en" href="https://inematds.github.io/inema-agent-runtime/guia/en/">
-<link rel="alternate" hreflang="es" href="https://inematds.github.io/inema-agent-runtime/guia/es/">
+<link rel="alternate" hreflang="pt-BR" href="https://linnoff88-dev.github.io/arckhe-/guia/">
+<link rel="alternate" hreflang="en" href="https://linnoff88-dev.github.io/arckhe-/guia/en/">
+<link rel="alternate" hreflang="es" href="https://linnoff88-dev.github.io/arckhe-/guia/es/">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
@@ -39,8 +39,8 @@
   nav .brand{display:flex;align-items:center;gap:8px;font-family:Sora;font-weight:800;letter-spacing:-.02em;color:var(--amb)}
   nav .brand .emoji{font-size:1.25rem}
   nav .sep{color:var(--mut);opacity:.45}
-  nav .inema{color:var(--sky);font-weight:600;font-size:.88rem;font-family:Sora}
-  nav .inema:hover{filter:brightness(1.15)}
+  nav .ARCKHÉ{color:var(--sky);font-weight:600;font-size:.88rem;font-family:Sora}
+  nav .ARCKHÉ:hover{filter:brightness(1.15)}
   nav .pro{color:var(--pro);font-weight:600;font-size:.88rem;font-family:Sora}
   nav .pro:hover{filter:brightness(1.15)}
   nav .clubpro{display:inline-flex;align-items:center;gap:6px}
@@ -115,9 +115,9 @@
   <a class="brand" href="#top"><span class="emoji">🧰</span> Agent Runtime</a>
   <span class="sep">|</span>
   <span class="clubpro">
-    <a class="inema" href="https://inema.club" target="_blank" rel="noopener">INEMA.CLUB</a>
+    <a class="ARCKHÉ" href="https://ARCKHÉ AI" target="_blank" rel="noopener">ARCKHÉ AI</a>
     <span class="sep">-</span>
-    <a class="pro" href="https://inema.pro" target="_blank" rel="noopener">PRO</a>
+    <a class="pro" href="https://ARCKHÉ.pro" target="_blank" rel="noopener">PRO</a>
   </span>
   <div class="links">
     <a class="sec" href="#oque">O que é</a>
@@ -127,7 +127,7 @@
     <a class="sec" href="#roadmap">Roadmap</a>
     <span class="lang"><a class="on" href="./">PT</a><a href="en/">EN</a><a href="es/">ES</a></span>
     <button class="tgl" id="themeToggle" aria-label="Alternar tema" title="Alternar tema">🌙</button>
-    <a class="btn" href="https://github.com/inematds/inema-agent-runtime" target="_blank" rel="noopener">GitHub</a>
+    <a class="btn" href="https://github.com/linnoff88-dev/ARCKHÉ-agent-runtime" target="_blank" rel="noopener">GitHub</a>
   </div>
 </div></nav>
 
@@ -140,10 +140,10 @@
       <p class="lead">Uma pasta <code>runtime/</code> que ensina o Claude Code e o Codex a descobrir, conectar e usar seus sistemas, com regras claras do que podem fazer sozinhos. Sem servidor, sem API paga.</p>
       <div class="cta">
         <a class="btn" href="#guia">Começar o guia</a>
-        <a class="btn ghost" href="https://github.com/inematds/inema-agent-runtime" target="_blank" rel="noopener">Ver no GitHub</a>
+        <a class="btn ghost" href="https://github.com/linnoff88-dev/ARCKHÉ-agent-runtime" target="_blank" rel="noopener">Ver no GitHub</a>
       </div>
     </div>
-    <figure><img src="assets/banner.jpg" alt="Banner do INEMA Agent Runtime: agentes que usam suas ferramentas, pela assinatura e com política de permissões"></figure>
+    <figure><img src="assets/banner.jpg" alt="Banner do ARCKHÉ Agent Runtime: agentes que usam suas ferramentas, pela assinatura e com política de permissões"></figure>
   </div>
 </header>
 
@@ -225,7 +225,7 @@
   <div class="step"><div class="b">1</div><div>
     <h3>Copie o kit e rode o diagnóstico</h3>
     <p>Mostra o que está instalado e logado: Node, Claude Code, Codex e Ollama.</p>
-<pre><span class="k">git clone</span> <span class="s">https://github.com/inematds/inema-agent-runtime</span> meu-projeto
+<pre><span class="k">git clone</span> <span class="s">https://github.com/linnoff88-dev/ARCKHÉ-agent-runtime</span> meu-projeto
 <span class="k">cd</span> meu-projeto
 <span class="k">node</span> runtime/scripts/doctor.mjs   <span class="c"># prova: PRONTO no fim</span></pre>
   </div></div>
@@ -248,7 +248,7 @@ runtime/pontes/codex-exec.sh <span class="s">"Crie notas.txt com a palavra OK"</
   <div class="step"><div class="b">4</div><div>
     <h3>R2 · Time de três papéis</h3>
     <p>Planejador (opus), executor (sonnet) e revisor (haiku), definidos em <code>.claude/agents/</code>. Cada um usa o modelo que precisa e a cota rende mais.</p>
-<pre><span class="k">claude</span> -p <span class="s">"Use o time (planejador, executor, revisor). Tarefa: crie saudacao.txt com a frase 'Olá, comunidade INEMA'. Termine com a resposta do revisor."</span>
+<pre><span class="k">claude</span> -p <span class="s">"Use o time (planejador, executor, revisor). Tarefa: crie saudacao.txt com a frase 'Olá, comunidade ARCKHÉ'. Termine com a resposta do revisor."</span>
 <span class="c"># prova: saudacao.txt tem a frase e a resposta termina com APROVADO</span></pre>
   </div></div>
 
@@ -293,7 +293,7 @@ runtime/pontes/codex-exec.sh <span class="s">"Crie notas.txt com a palavra OK"</
 <span class="c"># painel opcional: na sessêo, digite /painel</span>
 <span class="k">claude</span> --plugin-dir runtime/mods/runtime-painel
 <span class="k">claude</span> plugin test runtime/mods/runtime-painel   <span class="c"># prova: 1 pass</span></pre>
-    <p>O painel lista as sessões do <code>claude --bg</code> (nome, estado, minutos), com <strong>Atualizar</strong> e <strong>Parar</strong>: só o seu clique para uma sessêo. <code>INEMA_COLISAO_MIN=60</code> muda a janela da colisêo. O Codex ainda nêo tem um gancho "antes de editar" equivalente: a colisêo protege as sessões do Claude e detecta edições feitas pelo Codex pela data do arquivo.</p>
+    <p>O painel lista as sessões do <code>claude --bg</code> (nome, estado, minutos), com <strong>Atualizar</strong> e <strong>Parar</strong>: só o seu clique para uma sessêo. <code>ARCKHÉ_COLISAO_MIN=60</code> muda a janela da colisêo. O Codex ainda nêo tem um gancho "antes de editar" equivalente: a colisêo protege as sessões do Claude e detecta edições feitas pelo Codex pela data do arquivo.</p>
   </div></div>
 </div></section>
 
@@ -332,15 +332,15 @@ data,cliente,produto,quantidade,valor_unitario
 <footer>
   <div class="wrap">
     <div class="pill">Node 18+</div><div class="pill">Claude Code</div><div class="pill">Codex CLI</div><div class="pill">MCP</div>
-    <p style="margin-top:18px">INEMA Agent Runtime 0.3.0 · licença MIT ·
-      <a href="https://github.com/inematds/inema-agent-runtime">inematds/inema-agent-runtime</a> ·
-      <a href="https://inema.club">INEMA.CLUB</a></p>
+    <p style="margin-top:18px">ARCKHÉ Agent Runtime 0.3.0 · licença MIT ·
+      <a href="https://github.com/linnoff88-dev/ARCKHÉ-agent-runtime">linnoff88-dev/ARCKHÉ-agent-runtime</a> ·
+      <a href="https://ARCKHÉ AI">ARCKHÉ AI</a></p>
   </div>
 </footer>
 
 <script>
   (function(){
-    var KEY='inema-agent-runtime-theme';
+    var KEY='ARCKHÉ-agent-runtime-theme';
     var b=document.body, t=document.getElementById('themeToggle');
     try{ if(localStorage.getItem(KEY)==='light'){ b.classList.add('light'); t.textContent='☀️'; } }catch(e){}
     t.addEventListener('click',function(){
